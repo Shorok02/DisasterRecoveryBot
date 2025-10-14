@@ -1,8 +1,11 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 #from botfather --> is that okay?
-BOT_TOKEN = "8262843336:AAFzoxIF9CaEQ3iz06ujRKsZLwfv7yQdJ14"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # --- Define the menus ---
 # TODO: separate menus into different files to accommodate more complex logic
