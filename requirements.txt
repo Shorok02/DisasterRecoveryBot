@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+httpx
+python-dotenv
+python-telegram-bot==20.8
+requests
