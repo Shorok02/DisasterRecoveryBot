@@ -42,6 +42,23 @@ Other bots actions are available --> This should be controlled in a sense maybe 
 - @BotFather in telegram to create the token of the bot
 - simple python script with _python-telegram-bot library_
 
+
+
+## 3. linking the phone number to the database :
+ - first commit was all dummy data, we want when the user opens the bot, it fetches his details from the database based on his phone number or username (if we have usernames in our db)
+
+ - telegram does not directly catch phonenumber, you need to prompt the user to share contact and then check if this phone number is a verified user in our db 
+
+ - also usually they do **not** do that, instead you can : 
+    - ask the user to enter his username and verify it with an otp (if we do otp stuff) 
+    **very general you can literally use the bot from any device as long as you can verify with the otp.**
+
+    - or from the main app itself, users link their telegram account with their profile and then you can work with telegram ids instead of phone numbers (e.g. binance)
+    **if a user did not link his telegram account with his profile, he will not be able to use the bot**
+    
+
+
+
 ## 3. todos
 
 - instead of dummy data fetch details based on username or phone number (after authentication if we do it --> recommended --> akedly otps should be easy)
