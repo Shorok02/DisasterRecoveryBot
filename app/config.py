@@ -28,7 +28,7 @@ TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 # Akedly OTP API configuration
 AKEDLY_API_KEY = os.getenv("AKEDLY_API_KEY") 
 PIPELINE_ID = os.getenv("AKEDLY_PIPELINE_ID") 
-BASE_URL = "https://api.akedly.io/api/v1/transactions"
+AKEDLY_BASE_URL = "https://api.akedly.io/api/v1/transactions"
 
 # General settings
 OTP_EXPIRY_MINUTES = 5

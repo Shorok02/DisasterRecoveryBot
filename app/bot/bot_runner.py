@@ -1,10 +1,10 @@
 # app/bot/bot_runner.py
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
-from app.config import BOT_TOKEN
+from app.config import TELEGRAM_BOT_TOKEN
 from app.bot.handlers import auth_handlers, bot_handlers, fallback_handler
 
 def start_bot():
-    app = ApplicationBuilder().token(BOT_TOKEN).build()
+    app = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
 
     # auth flow
     app.add_handler(CommandHandler("start", auth_handlers.start))
