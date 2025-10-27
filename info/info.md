@@ -57,9 +57,13 @@ Other bots actions are available --> This should be controlled in a sense maybe 
     **if a user did not link his telegram account with his profile, he will not be able to use the bot**
     
 
+## 4. Database: 
+- first version dummy data inside the script itself
+- now try to connect to a database (I chose sqlite for simplicity) and fetch user details based on phone number 
+ - check how you can design it for such usecase initially one table with user info and another table for transactions (since we are doing actions)
+ - later might be a replica or smth since disaster recovery or on the cloud.
 
-
-## 3. todos
+## TODOs
 
 - instead of dummy data fetch details based on username or phone number (after authentication if we do it --> recommended --> akedly otps should be easy)
 

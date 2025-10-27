@@ -88,5 +88,4 @@ async def handle_otp(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception as e:
         logging.exception("handle_otp error")
         await update.message.reply_text(f"Error verifying OTP: {e}")
-        
-# ...existing code...
+
